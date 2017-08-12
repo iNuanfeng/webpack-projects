@@ -1,0 +1,11 @@
+{
+  "name": "swiper",
+  "version": "2.7.6",
+  "description": "",
+  "main": "2.7.6/swiper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kxf",
+  "license": "ISC"
+}

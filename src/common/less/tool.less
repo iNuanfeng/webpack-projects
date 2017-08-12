@@ -1,0 +1,84 @@
+.clearfix() {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.hidden() {
+    display: none !important;
+    visibility: hidden;
+}
+
+.line0() {
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+.line1() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.line2() {
+    display: -webkit-box;
+    overflow: hidden;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.line3() {
+    display: -webkit-box;
+    overflow: hidden;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.linex(@num) {
+    display: -webkit-box;
+    overflow: hidden;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+}
+
+.perspective(@value: 1000) {
+    -webkit-perspective: @value;
+       -moz-perspective: @value;
+        -ms-perspective: @value;
+            perspective: @value;
+}
+
+// user select 不允许用户选中页面中文字
+.user-select-none() {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+        -ms-user-select: none;
+    /* IE 10+ */
+            user-select: none;
+}
+
+//数字 字体加粗 用Helvetica Neue字体
+.font-weight(){
+    font-family: "Helvetica Neue",HeitiJ-Light,Helvetica,STHeiTi,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+}
+
+.base64(@width, @height, @src) {
+    width: @width;
+    height: @height;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(@src);
+}

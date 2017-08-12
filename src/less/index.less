@@ -1,0 +1,381 @@
+@import '../common/less/common';
+
+body {
+  display: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9); 
+  width: 100%;
+  z-index: 99;
+}
+
+.logo {
+  float: left;
+  width: 138px;
+  height: 28px;
+  margin: 22px 0 0 118px;
+  .base64(128px, 28px, '../../assets/images/logo.png');
+}
+
+.navbar {
+  float: right;
+  margin-right: 90px;
+  a{
+    margin: 0 32px;
+    padding: 0 3px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    transition: all 0.2s;
+    &.on{
+      border-bottom: 3px solid #fff;
+    }
+  }
+  span{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+  }
+}
+
+.fixed-bg {
+  width: 100%;
+  min-width: 1200px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.banner {
+  background-image: url('//yun.duiba.com.cn/qiho-h5/protal/images/banner950.jpg');
+}
+
+.banner2 {
+  background-image: url('//yun.duiba.com.cn/qiho-h5/protal/images/fixbg1.jpg');
+}
+
+.banner3 {
+  background-image: url('//yun.duiba.com.cn/qiho-h5/protal/images/fixbg2.jpg');
+}
+
+.kf{
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  .kf-cont{
+    width: 1332px;
+    margin: 0 auto;
+    .left{
+      float: left;
+      width: 205px;
+      height: 560px;
+      margin-top: 140px;
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('//yun.duiba.com.cn/qiho-h5/protal/images/qrcode.png');
+      p{
+        font-size: 14px;
+        color: #000;
+        font-weight: 100;
+        width: 172px;
+        height: 165px;
+        line-height: 21px;
+        font-style: italic;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 115px;
+        left: 20px;
+      }
+    }
+    .right{
+      float: right;
+      width: 1126px;
+      height: 755px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('//yun.duiba.com.cn/qiho-h5/protal/images/products2.jpg');
+    }
+  }
+}
+.logo {
+  float: left;
+  margin: 22px 0 0 118px;
+  .base64(128px, 28px, '../../assets/images/logo.png');
+}
+.service{
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  ul{
+    width: 1275px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 285px;
+    li{
+      width: 570px;
+      height: 128px;
+      border-bottom: 3px solid #000;
+      float: left;
+      margin-left: 45px;
+      margin-bottom: 146px;
+      i{
+        display: block;
+        float: left;
+        margin-right: 46px;
+        &.icon-car{
+          margin-left: 7px;
+          .base64(80px, 56px, '../../assets/images/car.png');
+        }
+        &.icon-seven{
+          margin-left: 35px;
+          .base64(52px, 63px, '../../assets/images/seven.png');
+        }
+        &.icon-knock{
+          margin-left: 7px;
+          .base64(89px, 65px, '../../assets/images/knock.png');
+        }
+        &.icon-jiang{
+          margin-left: 35px;
+          .base64(56px, 70px, '../../assets/images/jiang.png');
+        }
+      }
+      div{
+        float: left;
+        color:#000;
+        h1{
+          font-size:20px;
+        }
+        h2{
+          font-weight: normal;
+          font-size: 14px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.provider{
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  .p-cont{
+    width: 1194px;
+    margin: 0 auto;
+    overflow: hidden;
+    .p-left{
+      width: 582px;
+      margin-top: 196px;
+      float: left;
+      ul{
+        width: 582px;
+        li{
+          width: 520px;
+          color:#000;
+          margin-bottom: 70px;
+          border-bottom: 3px solid #000;
+          h1{
+            font-size:20px;
+          }
+          h2{
+            font-weight: normal;
+            font-size: 14px;
+            margin-top: 25px;
+            line-height: 20px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .p-right{
+      width: 683px;
+      height: 598px;
+      margin-top: 228px;
+      margin-left: 630px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('//yun.duiba.com.cn/qiho-h5/protal/images/box.jpg');
+    }
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 146px;
+  line-height: 146px;
+  background: #000;
+  text-align: center;
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1280px){
+  .kf{
+    height: 640px;
+    .kf-cont{
+      width: 1145px;
+      .left{
+        height: 502px;
+        margin-top: 70px;
+        p{
+          height: 165px;
+          top: 100px;
+          left: 10px;
+        }
+      }
+      .right{
+        width: 940px;
+        height: 666px;
+        margin-top: -40px;
+      }
+    }
+  }
+  .service{
+    height: 640px;
+    ul{
+      width: 1147px;
+      margin-top: 130px;
+      li{
+        width: 521px;
+        margin-left: 35px;
+        margin-bottom: 106px;
+        margin-top: 5px;
+        i{
+          margin-right: 23px;
+          &.icon-car{
+            margin-left: 15px;
+            .base64(64px, 45px, '../../assets/images/car.png');
+          }
+          &.icon-seven{
+            margin-left: 15px;
+            .base64(45px, 49px, '../../assets/images/seven.png');
+          }
+          &.icon-knock{
+            margin-left: 15px;
+            .base64(72px, 55px, '../../assets/images/knock.png');
+          }
+          &.icon-jiang{
+            margin-left: 15px;
+            margin-top: 3px;
+            .base64(51px, 59px, '../../assets/images/jiang.png');
+          }
+        }
+      }
+    }
+  }
+  .provider{
+    height: 670px;
+    .p-cont{
+      width: 960px;
+      .p-left{
+        width: 540px;
+        margin-top: 70px;
+        ul{
+          li{
+            width: 480px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .p-right{
+        width: 540px;
+        height: 448px;
+        margin-top: 120px;
+        margin-left: 535px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1281px) and (max-width: 1440px){
+  .kf{
+    height: 740px;
+    .kf-cont{
+      width: 1165px;
+      .left{
+        height: 525px;
+        margin-top: 110px;
+        p{
+          height: 165px;
+          top: 110px;
+          left: 15px;
+        }
+      }
+      .right{
+        width: 960px;
+        height: 700px;
+      }
+    }
+  }
+  .service{
+    height: 740px;
+    ul{
+      width: 1162px;
+      margin-top: 170px;
+      li{
+        width: 521px;
+        margin-left: 40px;
+        margin-bottom: 106px;
+        margin-top: 5px;
+        i{
+          margin-right: 23px;
+          &.icon-car{
+            margin-left: 15px;
+            .base64(64px, 45px, '../../assets/images/car.png');
+          }
+          &.icon-seven{
+            margin-left: 15px;
+            .base64(45px, 49px, '../../assets/images/seven.png');
+          }
+          &.icon-knock{
+            margin-left: 15px;
+            .base64(72px, 55px, '../../assets/images/knock.png');
+          }
+          &.icon-jiang{
+            margin-left: 15px;
+            margin-top: 3px;
+            .base64(51px, 59px, '../../assets/images/jiang.png');
+          }
+        }
+      }
+    }
+  }
+  .provider{
+    height: 760px;
+    .p-cont{
+      width: 960px;
+      .p-left{
+        width: 540px;
+        margin-top: 110px;
+        ul{
+          li{
+            width: 480px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .p-right{
+        width: 540px;
+        height: 448px;
+        margin-top: 160px;
+        margin-left: 535px;
+      }
+    }
+  }
+}

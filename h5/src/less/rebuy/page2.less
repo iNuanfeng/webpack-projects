@@ -1,0 +1,48 @@
+@import './page1';
+
+@rem: 46.875rem;
+
+.icons {
+	width: 100%;
+	padding: 25/@rem 0 25/@rem 24/@rem;
+	background-color: #e1ebed;
+
+	.icon{
+		float: left;
+		width: 345/@rem;
+		height: 200/@rem;
+		margin-bottom: 10/@rem;
+		display: block;
+		background-size: 100% 100%;
+	}
+	.icon:nth-child(1) {
+		background-image: url('//yun.duiba.com.cn/qiho-h5/images/rebuy/icon1.png');
+	}
+	.icon:nth-child(2) {
+		background-image: url('//yun.duiba.com.cn/qiho-h5/images/rebuy/icon22.png');
+	}
+	.icon:nth-child(3) {
+		background-image: url('//yun.duiba.com.cn/qiho-h5/images/rebuy/icon3.png');
+	}
+	.icon:nth-child(4) {
+		background-image: url('//yun.duiba.com.cn/qiho-h5/images/rebuy/icon4.png');
+	}
+	.icon:nth-child(5) {
+		margin-bottom: 0;
+		background-image: url('//yun.duiba.com.cn/qiho-h5/images/rebuy/icon5.png');
+	}
+	.icon:nth-child(6) {
+		margin-bottom: 0;
+		background-image: url('//yun.duiba.com.cn/qiho-h5/images/rebuy/icon6.png');
+	}
+
+	.icon:nth-child(2n){
+		margin-left: 10/@rem;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
